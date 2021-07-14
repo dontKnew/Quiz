@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>UI/UX Quiz</title>
+</head>
+
+<body>
+    <div class="startPage">
+        <h1 class="text-danger text-center">English Quiz 0.1v </h1>
+        <div class="userInput">
+            <input type="text" name="usernameQuiz" id="user_name" placeholder="Enter your name">
+            <input type="email" name="user_emailQuiz" id="user_email" placeholder="Enter your email">
+        </div>
+        <h3>Instruction:</h3>
+        <ul style="list-style:square">
+            <li>Be carefully to anser the question becuase your score will public to everyone at my webpage</li>
+            <li>There is only 10 question, one question correct score will 2 marks.</li>
+            <li>You have to give answer within 30 seconds otherwise question take off to next question and You will lost
+                2 marks as per one question(s).</li>
+        </ul>
+        <input type="submit" value="Start Quiz" onclick="startQuiz()" class="startBtn">
+        <table class="userTable">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>SCORE</th>
+                <th>PLAYED DT.</th>
+            </tr>
+        </table>
+    </div>
+    <!-- <div class="questionPage">
+        <h3>What tag do you need to use to enclose the javascript code ?</h2>
+        <div class="answerBody">
+            <p class="timeLeft">Time Left : <span>25</span></p>
+            <div class="answerBox">
+            <div>
+                <input type="radio" name="answer" id="answer1"><span>body</span>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="answer2"><span>style</span>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="answer3"><span>code</span>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="answer4"><span>script</span>
+            </div>
+        </div>
+        </div>
+        <div class="nextBtn1">
+            <input type="button" value="Next" class="nextBtn">
+        </div>
+    </div> -->
+    <div class="endPageBody">
+        <div class="endPage">
+            <h1 class="score">Your Score: 0 </h1>
+            <h3 class="cheer" style="text-align: center;">Well played! keep it up, One Day you will learn english like
+                angrej :p</h3>
+            <div>
+                <input type="button" value="Restart Quiz" class="restartBtn" onclick="homePage()">
+                <input type="button" value="HOME" class="homeBtn" onclick="homePage()">
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
